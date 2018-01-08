@@ -1,0 +1,4 @@
+CUDNN_VERSION=6.0.21
+apt-get update && apt-get install -y --no-install-recommends \
+  libcudnn6=${CUDNN_VERSION}-1+cuda${CUDA} \
+  libcudnn6-dev=${CUDNN_VERSION}-1+cuda${CUDA}

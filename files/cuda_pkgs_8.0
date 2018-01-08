@@ -1,0 +1,29 @@
+export CUDA_VERSION=8.0.61
+export CUDA_PKG_VERSION=8-0=${CUDA_VERSION}-1
+apt-get update && apt-get install -y --no-install-recommends \
+  cuda-command-line-tools-${CUDA_PKG_VERSION} \
+  cuda-core-${CUDA_PKG_VERSION} \
+  cuda-cublas-8-0=${CUDA_VERSION}.2-1 \
+  cuda-cublas-dev-8-0=${CUDA_VERSION}.2-1 \
+  cuda-cudart-${CUDA_PKG_VERSION} \
+  cuda-cudart-dev-${CUDA_PKG_VERSION} \
+  cuda-driver-dev-${CUDA_PKG_VERSION} \
+  cuda-cufft-${CUDA_PKG_VERSION} \
+  cuda-cufft-dev-${CUDA_PKG_VERSION} \
+  cuda-curand-${CUDA_PKG_VERSION} \
+  cuda-curand-dev-${CUDA_PKG_VERSION} \
+  cuda-cusolver-${CUDA_PKG_VERSION} \
+  cuda-cusolver-dev-${CUDA_PKG_VERSION} \
+  cuda-cusparse-${CUDA_PKG_VERSION} \
+  cuda-cusparse-dev-${CUDA_PKG_VERSION} \
+  cuda-misc-headers-${CUDA_PKG_VERSION} \
+  cuda-npp-${CUDA_PKG_VERSION} \
+  cuda-npp-dev-${CUDA_PKG_VERSION} \
+  cuda-nvgraph-${CUDA_PKG_VERSION} \
+  cuda-nvgraph-dev-${CUDA_PKG_VERSION} \
+  cuda-nvml-dev-${CUDA_PKG_VERSION} \
+  cuda-nvrtc-${CUDA_PKG_VERSION} \
+  cuda-nvrtc-dev-${CUDA_PKG_VERSION} \
+  cuda-samples-${CUDA_PKG_VERSION}
+
+##  cuda-demo-suite-8-0 \
